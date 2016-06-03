@@ -1,0 +1,30 @@
+#header {
+    height: 50px;
+    background-color: #374;
+    margin: 0;
+}
+
+#menu {
+    padding: 10px;
+    background-color: #000;
+}
+
+#menu a {    
+    margin: 5px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#content {
+    min-height: 400px;
+    padding: 20px;
+    margin: 0;
+    background-color: #EEE;
+}
+
+#footer {
+    height: 50px;
+    background-color: #374;
+    margin: 0;
+}
+

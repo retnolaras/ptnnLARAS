@@ -1,0 +1,208 @@
+/* 
+    
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+* {
+    margin: 0;
+}
+
+
+body {
+    background: url('images/bg1.JPG') center fixed no-repeat #103210;
+}
+
+#container {
+    
+    width: 960px;
+    margin: 10px auto;
+}
+
+#header {
+    background: url('images/logo11.png');
+    height: 115px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+}
+
+#top_menu {
+    background: rgba(0,0,0,0.7);
+    height: 30px;
+    padding: 10px;
+    color: white;
+    margin: 0px 0 30px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+}
+
+#top_menu a {
+    color: rgba(200,255,200,0.9);
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    font-size: 15pt;
+    font-weight: 800;
+    margin: 0 20px;
+}
+
+#content {
+    background-color: rgba(255,255,255,0.1);
+    min-height: 500px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.left {
+    float: left;
+    width: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.isi {
+    padding-top: 10px;
+    margin-left: 270px;
+    width: 680px;
+}
+
+.top {
+    background-color: #103210;
+    color: white;
+    padding: 5px;
+    padding-left: 20px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+}
+
+.mid {
+    background: white;
+    padding: 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+}
+
+.mid ul {
+    font-size: 9pt;
+    list-style-image: url("images/panah.gif");
+    margin-left: 10px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #103210;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/************************************************
+*	Navbar      								*
+************************************************/
+
+#navbar {
+	background: #000000 url(navbar00.gif);
+	width: 960px;
+	height: 35px;
+	font-size: 12px;
+	font-family: Arial, Tahoma, Verdana;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0px auto 0px;
+	padding: 0px;
+	}
+
+#nav {
+	margin: 0px;
+	padding: 0px;
+	}
+
+#nav ul {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#nav li {
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#nav li a, #nav li a:link, #nav li a:visited {
+	color: #FFFFFF;
+	display: block;
+	font-weight: normal;
+    margin: 0px;
+	padding: 9px 20px 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-right: 1px solid #000000;
+	}
+
+#nav li a:hover, #nav li a:active {
+	background: #000000 url(navhov00.gif);
+	color: #FFFFFF;
+	}
+
+#nav li li a, #nav li li a:link, #nav li li a:visited {
+	width: 170px;
+	background: #424242;
+	color: #FFFFFF;
+	float: none;
+	margin: 0px;
+	padding: 7px 10px 7px 10px;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	}
+
+#nav li li a:hover, #nav li li a:active {
+	background: #000000;
+	color: #FFFFFF;
+	padding: 7px 10px 7px 10px;
+	}
+
+#nav li ul {
+	z-index: 9999;
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 190px;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#nav li li {
+	}
+
+#nav li ul a {
+	width: 160px;
+	}
+
+#nav li ul a:hover, #nav li ul a:active {
+	}
+
+#nav li ul ul {
+	margin: -30px 0 0 191px;
+	}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+	}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+	left: auto;
+	}
+
+#nav li:hover, #nav li.sfhover {
+	position: static;
+	}
+	

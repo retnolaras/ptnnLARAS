@@ -1,0 +1,150 @@
+<!-- TinyMCE -->
+<script type="text/javascript" src="jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript">
+
+
+	// O2k7 skin
+	tinyMCE.init({
+		// General options
+		mode : "exact",
+		elements : "file",
+		theme : "advanced",
+		skin : "o2k7",
+		plugins : "lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,inlinepopups,autosave",
+
+		// Theme options
+		theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,formatselect,fontselect,fontsizeselect",
+		theme_advanced_buttons2 : "cut,copy,paste,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "left",
+		theme_advanced_statusbar_location : "bottom",
+		theme_advanced_resizing : true,
+
+		// Example content CSS (should be your site CSS)
+		content_css : "css/content.css",
+
+		// Drop lists for link/image/media/template dialogs
+		template_external_list_url : "lists/template_list.js",
+		external_link_list_url : "lists/link_list.js",
+		external_image_list_url : "lists/image_list.js",
+		media_external_list_url : "lists/media_list.js",
+
+		// Replace values for the template plugin
+		template_replace_values : {
+			username : "Some User",
+			staffid : "991234"
+		}
+	});
+        // O2k7 skin
+	tinyMCE.init({
+		// General options
+		mode : "exact",
+		elements : "file2",
+		theme : "advanced",
+		skin : "o2k7",
+		plugins : "lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,inlinepopups,autosave",
+
+		// Theme options
+		theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,formatselect,fontselect,fontsizeselect",
+		theme_advanced_buttons2 : "cut,copy,paste,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "left",
+		theme_advanced_statusbar_location : "bottom",
+		theme_advanced_resizing : true,
+
+		// Example content CSS (should be your site CSS)
+		content_css : "css/content.css",
+
+		// Drop lists for link/image/media/template dialogs
+		template_external_list_url : "lists/template_list.js",
+		external_link_list_url : "lists/link_list.js",
+		external_image_list_url : "lists/image_list.js",
+		media_external_list_url : "lists/media_list.js",
+
+		// Replace values for the template plugin
+		template_replace_values : {
+			username : "Some User",
+			staffid : "991234"
+		}
+	});
+
+         // O2k7 skin
+	tinyMCE.init({
+		// General options
+		mode : "exact",
+		elements : "file3",
+		theme : "advanced",
+		skin : "o2k7",
+		plugins : "lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,inlinepopups,autosave",
+
+		// Theme options
+		theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,formatselect,fontselect,fontsizeselect",
+		theme_advanced_buttons2 : "cut,copy,paste,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,|,insertdate,inserttime,preview,|,forecolor,backcolor",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "left",
+		theme_advanced_statusbar_location : "bottom",
+		theme_advanced_resizing : true,
+
+		// Example content CSS (should be your site CSS)
+		content_css : "css/content.css",
+
+		// Drop lists for link/image/media/template dialogs
+		template_external_list_url : "lists/template_list.js",
+		external_link_list_url : "lists/link_list.js",
+		external_image_list_url : "lists/image_list.js",
+		media_external_list_url : "lists/media_list.js",
+
+		// Replace values for the template plugin
+		template_replace_values : {
+			username : "Some User",
+			staffid : "991234"
+		}
+	});
+
+
+</script>
+<!-- /TinyMCE -->
+
+<h2 style="border-bottom: 2px solid #CCCCCC;" ><img src="images/edit.png" alt="" height="25" width="25"/><a href="#">  &nbsp; Edit Profile </a></h2> 
+<br />
+<p align="right"><?php echo anchor('dosen/logout', 'Logout') ?> </p>
+<fieldset>
+<legend> <strong>Edit Profil</strong> </legend>
+   <?php foreach($dosen as $data) ?>
+    <form method="post" action="dosen/edit_dosen/<?php echo $data['id'] ?>" enctype="multipart/form-data" >
+                <!-- Fieldset -->      
+                    
+                    <table>
+                        <input type="hidden" name="idnya" value="<?php echo $data['id']?>" />
+                        <tr> <td>Foto</td><td> : </td>
+                            <td>
+                                <input type="file" size="25" name="foto" />
+                            </td></tr>
+                        <tr> <td>Name</td> <td>:</td> <td><input type="text" size="60" name="nama" value="<?php echo $data['nama']; ?>" /></td> </tr>
+                        <tr> <td>Code</td> <td>:</td> <td><input type="text" size="10" name="kode" value="<?php echo $data['kode']; ?>" /></td> </tr>
+                        <tr> <td>Division</td> <td>:</td> <td><input type="text" size="60" name="divisi" value="<?php echo $data['divisi']; ?>" /></td> </tr>
+                        <tr> <td>Laboratory</td> <td>:</td> <td><input type="text" size="60" name="Lab" value="<?php echo $data['Lab']; ?>" /></td> </tr>
+                        <tr> <td>Email</td> <td>:</td> <td><input type="text" name="email" size="60" value="<?php echo $data['email']; ?>" /></td> </tr>
+                        <tr> <td>Birth Day</td> <td>:</td> <td><input type="text" size="30" name="tgl_lahir" value="<?php echo $data['tgl_lahir']; ?>" /></td> </tr>
+                    </table>
+                    <br />
+                    <table>
+                        <tr><td>Research : </td></tr>
+                        <tr><td><textarea id="file"  type="text" row="30" cols="46" name="riset"><?php echo $data['riset']; ?></textarea></td> </tr>
+                        <tr><td><br /></td></tr>
+                        <tr><td>Educational Background : </td></tr>
+                        <tr><td><textarea id="file3"  type="text" row="30" cols="46" name="pendidikan"><?php echo $data['pendidikan']; ?></textarea></td> </tr>
+                        <tr><td><br /></td></tr>
+                        <tr><td><br /></td></tr>
+                        <tr><td>Publication : </td></tr>
+                        <tr><td><textarea id="file2" type="text" row="30" cols="46" name="publikasi"><?php echo $data['publikasi']; ?></textarea></td> </tr>
+                    </table>
+                    <br />
+                    <p align="center">
+                        
+                         <input type="submit" name="submit" value="Submit" />
+                    </p>
+                
+                <!-- End of fieldset -->
+            </form>
+</fieldset>

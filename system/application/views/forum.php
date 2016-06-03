@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base href="<?php echo base_url() ?>" />
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<link rel="icon" href="images/icon.png" />
+<title><?php echo $title ?></title>
+</head>
+<body>
+
+<div id="wrap">
+
+<div id="header"></div>
+
+		<?php $this->load->view('menu')?>
+
+<div id="content">
+<div id="crumb"> <span>
+<?php if(isset($breadcrumbs)): ?>
+		<?=$breadcrumbs?>
+	<?php endif;?> </span></div>
+	<br />
+		<div class="right"> 
+		<?php $this->load->view($view_content); ?>
+		</div>
+		
+		<?php $this->load->view('sidebar2')?>
+
+		<div style="clear: both;"> </div>
+
+</div>
+
+<div id="bottom">
+<p> 
+Copyright ? 2011 - 2014 | Department Plants Protection - Bogor Agricultural University.  <br />
+Jl. Raya Darmaga Kampus IPB Darmaga Bogor 16680 <br />
+West Java, Indonesia <br />
+Phone. +62 251 8622642, +62 251 8622708 | 
+e-Mail : humas_se@ipb.ac.id <br />
+</p>
+
+ </div>
+</div>
+<div id="footer">
+<a href="" target="_blank">Home </a> | <a href="" target="_blank">About This Site</a> | <a href="" target="_blank"> Contact Us </a>
+</div>
+
+</body>
+</html>
